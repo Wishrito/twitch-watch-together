@@ -1,4 +1,4 @@
-const socket = io();
+const socket = io(window.location.origin + '/api');
 
 document.getElementById('joinRoomBtn').addEventListener('click', () => {
     const username = document.getElementById('usernameInput').value;
