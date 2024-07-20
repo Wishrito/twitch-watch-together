@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch Watch Together</title>
+</head>
+
+<body>
+    <h1>Twitch Watch Together</h1>
+    <input type="text" id="usernameInput" placeholder="Enter your username">
+    <input type="text" id="roomInput" placeholder="Enter room name">
+    <button id="joinRoomBtn">Join Room</button>
+    <br><br>
+    <input type="text" id="streamInput" placeholder="Enter Twitch Stream Name">
+    <button id="changeStreamBtn">Change Stream</button>
+    <br><br>
+    <div id="player"></div>
+    <br><br>
+    <div>
+        <h3>Users in Room:</h3>
+        <ul id="userList"></ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
